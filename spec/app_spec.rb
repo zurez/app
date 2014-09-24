@@ -5,7 +5,7 @@ describe "Static pages" do
   describe "Home page" do
 
     it "should have the content 'Sample App'" do
-      visit '/static_pages/home'
+      visit '/app/home'
       expect(page).to have_content('Sample App')
     end
   end
@@ -13,7 +13,7 @@ describe "Static pages" do
   describe "Help page" do
 
     it "should have the content 'Help'" do
-      visit '/static_pages/help'
+      visit '/app/help'
       expect(page).to have_content('Help')
     end
   end
@@ -21,7 +21,7 @@ describe "Static pages" do
   describe "About page" do
 
     it "should have the content 'About Us'" do
-      visit '/static_pages/about'
+      visit '/app/about'
       expect(page).to have_content('About Us')
     end
   end
